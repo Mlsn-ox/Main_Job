@@ -1,0 +1,140 @@
+header {
+  flex-flow: column;
+}
+
+.titre {
+  flex-flow: column;
+  font-size: 2rem;
+}
+
+header h2 img {
+  padding: 0.5rem;
+}
+
+.logo-titre {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul {
+  flex-flow: column;
+  align-items: center;
+}
+
+header ul li a {
+  height: 1.8rem;
+}
+
+header ul li a:hover {
+  background-color: #4f4f4f;
+}
+
+.main {
+  background-position: 60%;
+}
+
+.main h1 {
+  -webkit-text-stroke: 1px black;
+  font-size: 2rem;
+  max-width: 280px;
+}
+
+.main p {
+  font-size: 1.3rem;
+  max-width: 280px;
+}
+
+.carres {
+  padding: 4rem 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.offers {
+  display: flex;
+  flex-flow: column;
+}
+
+.offerelem {
+  margin: 0.5rem;
+}
+
+.offerelem-img {
+  height: 14rem;
+}
+
+.offerelem-txt {
+  font-size: 1rem;
+  padding-top: 1.2rem;
+}
+
+.separator {
+  margin-top: 0.5rem;
+  height: 0.1rem;
+}
+
+.who {
+  flex-flow: column;
+  margin-bottom: 3rem;
+}
+
+.who-txt {
+  margin: 1rem;
+}
+
+.who-txt h2 {
+  font-size: 1.7rem;
+  margin: 0.5rem;
+}
+
+.who-txt p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0.5rem;
+}
+
+.avis {
+  padding: 1rem 0.7rem;
+}
+
+.avis-elem {
+  flex-flow: column;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.reverse {
+  flex-flow: column-reverse;
+}
+
+.avis-elem-txt {
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
+.contact {
+  padding: 5rem 1rem;
+}
+
+.contact-form select,
+.contact-form input {
+  font-size: 1rem;
+}
+
+option {
+  font-size: 0.8rem;
+}
+
+.contact-form button {
+  margin: 2rem auto;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+
+

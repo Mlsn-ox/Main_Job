@@ -1,0 +1,304 @@
+/* Général */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/* Main */
+
+#blackout {
+  height: 0;
+  width: 100%;
+}
+
+#contain {
+  display: inline-block;
+  width: 75%;
+  height: 100vh;
+}
+
+#aside {
+  float: right;
+  width: 25%;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.wpevo {
+  min-width: 700px;
+  min-height: 730px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Wp-Evoli.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 500px;
+}
+
+.wpaqua {
+  min-width: 700px;
+  min-height: 730px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Wp-Aqua.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 500px;
+}
+
+.wppyro {
+  min-width: 700px;
+  min-height: 730px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Wp-Pyro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 500px;
+}
+
+.wpvolt {
+  min-width: 700px;
+  min-height: 730px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Wp-Volt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 500px;
+}
+
+#pokeboule {
+  min-width: 700px;
+  min-height: 730px;
+  height: 100%;
+  width: 100%;
+  background-image: url(./full.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170%;
+}
+
+#parc {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.evoli {
+  background-image: url(./Sprite_Evo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  justify-self: end;
+  width: 73px;
+  height: 70px;
+}
+
+.aquali {
+  background-image: url(./Sprite_Aqua.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  justify-self: end;
+  width: 73px;
+  height: 70px;
+}
+
+.pyroli {
+  background-image: url(./Sprite_Pyro.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  justify-self: end;
+  width: 73px;
+  height: 70px;
+}
+
+.voltali {
+  background-image: url(./Sprite_Volt.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  justify-self: end;
+  width: 73px;
+  height: 70px;
+}
+
+#flex {
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#ball {
+  opacity: 0;
+  margin: 20px;
+  width: 45px;
+  height: 45px;
+  background-image: url(./Ball.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#baie {
+  opacity: 0;
+  margin: 20px;
+  width: 45px;
+  height: 45px;
+  background-image: url(./Baie.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#teddy {
+  opacity: 0;
+  margin: 20px;
+  width: 45px;
+  height: 45px;
+  background-image: url(./Teddy.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aside */
+
+#aside {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+#jauge-border {
+  width: 270px;
+  margin: 5%;
+  height: 3rem;
+  border: 3px outset black;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+#jauge {
+  height: 100%;
+  width: 1px;
+  max-width: 265px;
+  overflow: hidden;
+  background-color: #000000;
+  background-image: url(./Fond-Jauge.jpg);
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.button {
+  margin-bottom: 5%;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.water {
+  width: 120px;
+  height: 120px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-image: url(./waterstone.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.fire {
+  width: 120px;
+  height: 120px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-image: url(./firestone.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.light {
+  width: 120px;
+  height: 120px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-image: url(./thunderstone.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}

@@ -1,0 +1,31 @@
+.title {
+  &-small {
+    letter-spacing: 0.5rem;
+    font-size: 1.7rem;
+  }
+}
+
+.text {
+  &-primary {
+    color: var(--primary);
+  }
+  &-hint {
+    color: var(--hint);
+  }
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+@keyframes upscale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
