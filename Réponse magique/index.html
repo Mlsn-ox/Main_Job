@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Vérité Absolue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="chakra-petch-regular">Bienvenue simple créature.</h1>
+    <div class="container">
+      <form>
+        <p class="chakra-petch-regular">
+          Je suis une entité d'énergie pure. <br />Formule ta question et je
+          répondrai par oui, ou par non :
+        </p>
+        <div class="form">
+          <input type="text" id="question" class="form__input chakra-petch-regular" placeholder="Que désires-tu savoir ?">
+        </div><br />
+        <button type="button" class="chakra-petch-regular" onclick="magicBall()">Appuie pour connaître la vérité</button>
+      </form>
+      <div id="retour" class="chakra-petch-regular">
+        <p id="concat"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

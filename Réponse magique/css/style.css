@@ -1,0 +1,96 @@
+:root {
+  --light: #ffacfe;
+  --primary: #df74dd;
+  --dark: #601d5f;
+  --text: #ffffff;
+  --background: #200a20;
+  --hint: #dcdcdc;
+  --border: #fbfbfb;
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+  --font-family: "Mulish", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #161819;
+  background-image: url(../img/blackhole.gif);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 70%;
+}
+body h1 {
+  text-align: center;
+  font-size: 4rem;
+  flex: 1;
+  margin: 1.5rem;
+}
+body .container {
+  width: 1100px;
+  height: 1000px;
+  text-align: center;
+}
+body .container .form__input {
+  width: 700px;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding-left: 20px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem white, inset -0.2rem -0.2rem 0.5rem white;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  color: white;
+  opacity: 0.8;
+  font-size: 1.5rem;
+}
+body .container .form__input ::placeholder {
+  color: var(--greyLight-3);
+  opacity: 1;
+}
+body .container .form__input :focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem white, -0.2rem -0.2rem 0.5rem white;
+}
+body .container button {
+  padding: 1rem;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+body .container #retour {
+  margin-top: 20px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
