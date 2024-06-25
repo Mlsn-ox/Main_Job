@@ -1,5 +1,6 @@
 const button = document.querySelector("button");
 let final = document.getElementById("concat");
+const input = document.getElementById("question");
 
 function magicBall() {
   const input = document.getElementById("question");
@@ -43,4 +44,9 @@ function magicBall() {
   final.innerHTML = eightBall;
 }
 
-// button.addEventListener("click");
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    magicBall();
+    event.preventDefault();
+  }
+});
