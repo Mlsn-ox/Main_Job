@@ -1,3 +1,6 @@
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
 :root {
   --light: #ffacfe;
   --primary: #df74dd;
@@ -28,6 +31,12 @@ p {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 480px) {
+  p {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+}
 
 .chakra-petch-regular {
   font-family: "Chakra Petch", sans-serif;
@@ -49,16 +58,33 @@ body {
   background-size: 80%;
   background-position: 50% 70%;
 }
+@media (max-width: 480px) {
+  body {
+    background-size: 100%;
+    background-position: center 70%;
+  }
+}
 body h1 {
   text-align: center;
   font-size: 4rem;
   flex: 1;
   margin: 1.5rem;
 }
+@media (max-width: 480px) {
+  body h1 {
+    font-size: 3rem;
+  }
+}
 body .container {
   width: 1100px;
   height: 1000px;
   text-align: center;
+}
+@media (max-width: 480px) {
+  body .container {
+    width: 100%;
+    height: 100vh;
+  }
 }
 body .container .form__input {
   width: 700px;
@@ -72,6 +98,11 @@ body .container .form__input {
   color: white;
   opacity: 0.8;
   font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  body .container .form__input {
+    width: 80%;
+  }
 }
 body .container .form__input ::placeholder {
   color: var(--greyLight-3);

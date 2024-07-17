@@ -1,14 +1,15 @@
 {
-  "name": "blog",
+  "name": "sass",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "sass": "sass -w scss:css"
+   "sass" : "sass -w scss:css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "sass": "^1.77.6"
+    "sass": "^1.77.4"
   }
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Yūgure Journal 夕暮れ | Accueil</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html" class="logo">
+          <img src="./Yugure.png" alt="Logo" />
+          Yūgure Journal 夕暮れ</a
+        >
+        <ul>
+          <li>
+            <a class="text-primary" href="./inscription.html">Inscription</a>
+          </li>
+          <li><a class="connex" href="#">Connexion</a></li>
+          <li><button class="light" href="#">Ajouter votre article</button></li>
+        </ul>
+      </header>
+      <nav>
+        <a href="#">ACTUALITÉS</a>
+        <a href="#">POLITIQUE</a>
+        <a href="#">SOCIAL</a>
+        <a href="#">MODE</a>
+        <a href="#">BOUTIQUE</a>
+        <a href="#">BLOG</a>
+      </nav>
+    </div>
+    <div class="form-contain">
+      <div class="form">
+        <h1>Inscription</h1>
+        <div class="separator"></div>
+        <form action="Verif.php" method="post">
+          <input type="text" name="Nom" placeholder="Nom" required />
+          <input type="text" name="Prénom" placeholder="Prénom" required />
+          <input type="email" name="Email" placeholder="Email" required />
+          <input
+            type="password"
+            name="Password"
+            placeholder="Mot de passe"
+            required
+          />
+          <button class="light" href="#">Créer votre compte</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
