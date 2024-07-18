@@ -586,7 +586,7 @@ nav a:hover {
   outline-color: transparent;
   background-color: var(--gray-light);
 }
-.form-contain form button {
+.form-contain form #button {
   margin: 2rem;
   width: 25%;
   min-width: 150px;
